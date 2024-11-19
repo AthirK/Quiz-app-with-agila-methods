@@ -12,7 +12,7 @@ public class SportQuiz extends Command{
     @Override
     public void execute(String[] commandArgs)
     {
-        System.out.println("hur många lag spelar samtidigt i en match");
+        System.out.println("hur många lag spelar samtidigt i en matche");
         System.out.println("a). 2. b). 3. c). 5.");
 
         Scanner scan = new Scanner(System.in);
