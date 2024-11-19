@@ -7,7 +7,7 @@ import org.example.userManager.UserManager;
 import java.util.Scanner;
 
 public class Application
-{ //init SImon
+{
     //managers
     private MenuManager menuManager;
     private UserManager userManager;

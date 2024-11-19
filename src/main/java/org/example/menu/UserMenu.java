@@ -1,6 +1,7 @@
 package org.example.menu;
 
 import org.example.Application;
+import org.example.commad.DogQuiz;
 import org.example.commad.SportQuiz;
 
 public class UserMenu extends Menu
@@ -10,6 +11,7 @@ public class UserMenu extends Menu
         // commands
         super(application);
         registerCommand(new SportQuiz(application));
+        registerCommand(new DogQuiz(application));
 
     }
 
