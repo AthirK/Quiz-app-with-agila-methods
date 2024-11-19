@@ -15,6 +15,12 @@ public abstract class Command
         this.application = application;
     }
 
+    public Command(String name, String description) {
+
+        this.name = name;
+        this.description = description;
+    }
+
     public String getName()
     {
         return name;
