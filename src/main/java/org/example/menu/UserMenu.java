@@ -1,7 +1,7 @@
 package org.example.menu;
 
 import org.example.Application;
-import org.example.commad.SportQuiz;
+import org.example.command.SportQuiz;
 
 public class UserMenu extends Menu
 {

@@ -1,8 +1,8 @@
 package org.example.menu;
 
 import org.example.Application;
-import org.example.commad.Command;
-import org.example.commad.CommandManager;
+import org.example.command.Command;
+import org.example.command.CommandManager;
 
 import java.util.ArrayList;
 import java.util.List;
