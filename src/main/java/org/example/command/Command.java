@@ -1,4 +1,4 @@
-package org.example.commad;
+package org.example.command;
 
 import org.example.Application;
 
@@ -13,6 +13,12 @@ public abstract class Command
         this.name = name;
         this.description = description;
         this.application = application;
+    }
+
+    public Command(String name, String description) {
+
+        this.name = name;
+        this.description = description;
     }
 
     public String getName()

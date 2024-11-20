@@ -1,5 +1,3 @@
-package org.example.commad;
-
 import org.example.Application;
 import org.example.commad.Command;
 
@@ -7,7 +5,7 @@ import java.util.Scanner;
 
 public class NatureQuiz extends Command
 {
-    public NatureQuiz(Application application) {
+    public SportQuiz(Application application) {
         super( "sport","this is a sport quiz", application);
     }
 

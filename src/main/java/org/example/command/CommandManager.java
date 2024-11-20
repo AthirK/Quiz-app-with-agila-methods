@@ -1,4 +1,4 @@
-package org.example.commad;
+package org.example.command;
 
 public interface CommandManager
 {
