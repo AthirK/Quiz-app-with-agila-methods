@@ -1,10 +1,10 @@
-package org.example.commad;
+package org.example.command;
 
 import org.example.Application;
 
 import java.util.Scanner;
 
-public class DogQuiz extends Command{
+public class DogQuiz extends Command {
 
 
     public DogQuiz(Application application) {

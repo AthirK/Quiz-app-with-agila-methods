@@ -1,7 +1,8 @@
 package org.example.menu;
 
 import org.example.Application;
-import org.example.commad.DogQuiz;
+import org.example.command.DogQuiz;
+import org.example.command.SportQuiz;
 
 public class UserMenu extends Menu
 {
@@ -17,6 +18,8 @@ public class UserMenu extends Menu
     @Override
     public void display()
     {
-        System.out.println("Application");
+        System.out.println("welcome to the quiz game!");
+        System.out.println("1. Create new User");
+        System.out.println("2. Load Existing User");
     }
 }
