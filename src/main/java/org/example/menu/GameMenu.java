@@ -2,26 +2,25 @@ package org.example.menu;
 
 import org.example.Application;
 import org.example.command.Command;
+import org.example.command.DogQuiz;
 import org.example.command.SportQuiz;
 
-public class UserMenu extends Menu
+public class GameMenu extends Menu
 {
-    public UserMenu(Application application)
+    public GameMenu(Application application)
     {
+        // commands
         super(application);
-
-        // placeholder code will replace with user login commands
         registerCommand(new SportQuiz(application));
+        registerCommand(new DogQuiz(application));
+
     }
 
     @Override
     public void display()
     {
-        System.out.println("welcome to the quiz game!");
-        System.out.println("1. Create new User");
-        System.out.println("2. Load Existing User");
-
-        System.out.println("login menu");
+        // loops throw command list and prints an index number and command name.
+        System.out.println("Welcome to the Quiz Game! Type 'help' for a list of commands.");
         int index = 1;
         for (Command command : commands)
         {

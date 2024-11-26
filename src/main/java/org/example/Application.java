@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.menu.GameMenu;
+import org.example.menu.Menu;
 import org.example.menu.MenuManager;
 import org.example.menu.SimpleMenuManager;
 import org.example.userManager.FileUserManager;
@@ -10,6 +12,7 @@ import java.util.Scanner;
 public class Application
 {
     public static boolean run = true;
+    public static boolean login = false;
 
     //managers
     private final MenuManager menuManager;
@@ -27,6 +30,8 @@ public class Application
 
         Scanner scanner = new Scanner(System.in);
 
+        // needs to move to commands with different class names for each user item.
+        // exp create user, load user, show list of users and so on...
         String choice = scanner.nextLine();
         switch (choice)
         {
@@ -37,12 +42,18 @@ public class Application
                 newUser.setUsername(newUsername);
                 newUser.setPoints(0);
                 application.getUserManager().save(newUser);
+                login = true;
+                Menu GameMenu = new GameMenu(application);
+                application.getMenuManager().setMenu(GameMenu);
                 break;
 
             case "2":
                 System.out.println("Enter username");
                 String existingUser = scanner.nextLine();
                 User loadUser = application.getUserManager().getByUsername(existingUser);
+                login = true;
+                application.getMenuManager().getCurrentMenu();
+
                 if(loadUser == null)
                 {
                     System.out.println("exiting game...");
