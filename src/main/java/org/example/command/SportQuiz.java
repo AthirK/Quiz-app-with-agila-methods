@@ -6,13 +6,16 @@ import java.util.Scanner;
 
 public class SportQuiz extends Command {
     public SportQuiz(Application application) {
-        super("sport", "this is a sport quiz", application);
+        super("Sport", "Type 'Sport' to play a sweaty game about sports. Important notice, if you input anything other than a,b or c, this will count as a try and result in loss of 1 point", application);
     }
 
     @Override
     public void execute(String[] commandArgs) {
         Scanner scan = new Scanner(System.in);
         int score = 0;
+
+
+
 
         // Question 1
         System.out.println("How many teams play in a soccer match?");
@@ -47,7 +50,32 @@ public class SportQuiz extends Command {
             System.out.println("Wrong! The correct answer is b) A racket.");
         }
 
+
+        // Question 4
+        System.out.println("Which team won the NBA finals of the year 2022?");
+        System.out.println("a) Golden State Warriors\nb) Miami Heat \nc) Chicago Bulls");
+        String input4 = scan.nextLine();
+        if (input4.equalsIgnoreCase("a")) {
+            System.out.println("Correct!");
+            score++;
+        } else {
+            System.out.println("Wrong! The correct answer is a) Golden State Warriors.");
+        }
+
+        // Question 5
+        System.out.println("What is the term for two extremely tall and dominant players on one team?");
+        System.out.println("a) Twin Towers\nb) Deuce Dribblers \nc) Big Ballers");
+        String input5 = scan.nextLine();
+        if (input5.equalsIgnoreCase("a")) {
+            System.out.println("Correct!");
+            score++;
+
+
+            System.out.println("Wrong! The correct answer is a) Twin Towers.");
+        }
+
+
         // Display the final score
-        System.out.println("\nYou scored " + score + " out of 3!");
+        System.out.println("\nYou scored " + score + " out of 5! Type help to return to main menu");
     }
 }
