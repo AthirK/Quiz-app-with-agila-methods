@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class SportQuiz extends Command {
     public SportQuiz(Application application) {
-        super("Sport", "Type 'Sport' to play a sweaty game about sports. Important notice, if you input anything other than a,b or c, this will count as a try and result in loss of 1 point", application);
+        super("Sport", "Type 'Sport' to play a sweaty sport game. Important notice, if you input anything other than a,b or c, this will count as a try and result in loss of 1 point", application);
     }
 
     @Override
