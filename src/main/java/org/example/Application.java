@@ -11,7 +11,7 @@ public class Application
 {
     public static boolean run = true;
 
-    //managers
+    //managerss
     private final MenuManager menuManager;
     private final UserManager userManager;
 
