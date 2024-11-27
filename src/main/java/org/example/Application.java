@@ -14,7 +14,7 @@ public class Application
     public static boolean run = true;
     public static boolean login = false;
 
-    //managers
+    //managerss
     private final MenuManager menuManager;
     private final UserManager userManager;
 
