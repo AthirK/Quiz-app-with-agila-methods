@@ -57,6 +57,7 @@ public class Application
 
         while (run)
         {
+            System.out.println("hej");
             String input = scanner.nextLine();
 
             application.getMenuManager().getCurrentMenu().tryExecuteCommand(input);
