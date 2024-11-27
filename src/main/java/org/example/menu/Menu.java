@@ -9,7 +9,7 @@ import java.util.List;
 
 public abstract class Menu implements CommandManager
 {
-    private final List<Command> commands = new ArrayList<>();
+    protected final List<Command> commands = new ArrayList<>();
     protected Application application;
 
     public Menu(Application application)
@@ -64,4 +64,3 @@ public abstract class Menu implements CommandManager
         System.out.println("Error: Unknown command '" + commandName + "'. Type 'help' for a list of commands.");
     }
 }
-

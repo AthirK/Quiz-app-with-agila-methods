@@ -15,8 +15,9 @@ public abstract class Command
         this.application = application;
     }
 
-    public Command(String name, String description) {
-
+    // ?
+    public Command(String name, String description)
+    {
         this.name = name;
         this.description = description;
     }
