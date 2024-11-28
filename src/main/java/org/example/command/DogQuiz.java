@@ -8,7 +8,7 @@ public class DogQuiz extends Command {
 
 
     public DogQuiz(Application application) {
-        super("Dog", "Type 'Dog' to play a fun and exiting quiz about dogs!", application);
+        super("Dog-Quiz", "Type 'Dog-quiz' to play a fun and exiting quiz about dogs!", application);
     }
 
     @Override

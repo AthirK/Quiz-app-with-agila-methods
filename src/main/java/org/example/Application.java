@@ -32,7 +32,7 @@ public class Application
 
         // needs to move to commands with different class names for each user item.
         // exp create user, load user, show list of users and so on...
-        String choice = scanner.nextLine();
+        /*String choice = scanner.nextLine();
         Menu GameMenu = new GameMenu(application);
 
         switch (choice)
@@ -67,6 +67,7 @@ public class Application
                 System.out.println("Invalid choice exiting game...");
                 run = false;
         }
+        */
 
         while (run)
         {

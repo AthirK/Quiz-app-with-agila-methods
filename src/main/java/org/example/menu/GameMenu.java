@@ -19,13 +19,15 @@ public class GameMenu extends Menu
     @Override
     public void display()
     {
-        // loops throw command list and prints an index number and command name.
         System.out.println("       <GAME MENU>");
-        System.out.println("Welcome to the Quiz Game! \nType 'help' for a list of commands.");
-        int index = 1;
+        System.out.println("Welcome to the Quiz Game!");
+        System.out.println("type the command name from the list below to proceed.");
+        System.out.println("example 'help'.");
+
+        // loops throw command list and prints an index number and command name.
         for (Command command : commands)
         {
-            System.out.println(index++ + ". " + command.getName());
+            System.out.println(command.getName());
         }
     }
 }

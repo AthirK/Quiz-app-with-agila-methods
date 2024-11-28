@@ -44,8 +44,8 @@ public class CreateUser extends Command
                 while (!validMenuChoice)
                 {
                     System.out.println("1. Overwrite user");
-                    System.out.println("2. change username");
-                    System.out.println("3. Cansel");
+                    System.out.println("2. Change username");
+                    System.out.println("3. Cancel");
 
                     String choice = scanner.nextLine().trim();
                     switch (choice)
@@ -56,7 +56,7 @@ public class CreateUser extends Command
                             existingUser.setUsername(newUsername);
                             existingUser.setPoints(0);
                             application.getUserManager().save(existingUser);
-                            System.out.println(newUsername + " has been overwritten.");
+                            System.out.println(newUsername + " has been overwritten. \n");
                             createdUser = true;
                             validMenuChoice = true;
                             break;
@@ -87,7 +87,7 @@ public class CreateUser extends Command
                 newUser.setPoints(0);
 
                 application.getUserManager().save(newUser);
-                System.out.println("User " + newUsername + " has been created.");
+                System.out.println("User " + newUsername + " has been created. \n");
                 createdUser = true;
             }
         }

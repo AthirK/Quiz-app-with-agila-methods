@@ -6,16 +6,16 @@ import java.util.Scanner;
 
 public class SportQuiz extends Command {
     public SportQuiz(Application application) {
-        super("Sport", "Type 'Sport' to play a sweaty sport game. Important notice, if you input anything other than a,b or c, this will count as a try and result in loss of 1 point", application);
+        super("Sport-Quiz", "Type 'Sport-quiz' to play a sweaty sport game.", application);
     }
 
     @Override
-    public void execute(String[] commandArgs) {
+    public void execute(String[] commandArgs)
+    {
         Scanner scan = new Scanner(System.in);
         int score = 0;
 
-
-
+        System.out.println("Important notice, if you input anything other than a,b or c, this will count as a try and result in loss of 1 point");
 
         // Question 1
         System.out.println("How many teams play in a soccer match?");
