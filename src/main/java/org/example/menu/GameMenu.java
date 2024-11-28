@@ -9,11 +9,11 @@ public class GameMenu extends Menu
 {
     public GameMenu(Application application)
     {
-        // commands
         super(application);
+
+        // Game commands
         registerCommand(new SportQuiz(application));
         registerCommand(new DogQuiz(application));
-
     }
 
     @Override

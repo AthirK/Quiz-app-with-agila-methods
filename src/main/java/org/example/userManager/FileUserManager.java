@@ -22,7 +22,6 @@ public class FileUserManager implements UserManager
             writer.append(user.getUsername()).append("\n")
                     .append(String.valueOf(user.getPoints())).append("\n");
 
-            System.out.println("User " + user.getUsername() + " created successfully!");
         }
         catch (IOException e)
         {
@@ -57,7 +56,6 @@ public class FileUserManager implements UserManager
         File file = new File("./Users", Username + ".txt");
         if (!file.exists())
         {
-            System.out.println("Error: '" + Username + "' not found.");
             return null;
         }
 
@@ -66,8 +64,6 @@ public class FileUserManager implements UserManager
             User user = new User();
             user.setUsername(reader.readLine());
             user.setPoints(Integer.parseInt(reader.readLine()));
-
-            System.out.println("User " + user.getUsername() + " Loaded successfully!");
 
             return user;
         }
