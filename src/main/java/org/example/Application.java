@@ -33,6 +33,8 @@ public class Application
         // needs to move to commands with different class names for each user item.
         // exp create user, load user, show list of users and so on...
         String choice = scanner.nextLine();
+        Menu GameMenu = new GameMenu(application);
+
         switch (choice)
         {
             case "1":
@@ -43,7 +45,7 @@ public class Application
                 newUser.setPoints(0);
                 application.getUserManager().save(newUser);
                 login = true;
-                Menu GameMenu = new GameMenu(application);
+
                 application.getMenuManager().setMenu(GameMenu);
                 break;
 
@@ -52,7 +54,7 @@ public class Application
                 String existingUser = scanner.nextLine();
                 User loadUser = application.getUserManager().getByUsername(existingUser);
                 login = true;
-                application.getMenuManager().getCurrentMenu();
+                application.getMenuManager().setMenu(GameMenu);
 
                 if(loadUser == null)
                 {

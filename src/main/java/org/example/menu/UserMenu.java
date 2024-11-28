@@ -11,18 +11,22 @@ public class UserMenu extends Menu
         super(application);
 
         // placeholder code will replace with user login commands
-        registerCommand(new SportQuiz(application));
+
     }
 
     @Override
     public void display()
     {
         // placeholder code
-        System.out.println("welcome to the quiz game!");
-        System.out.println("1. Create new User");
-        System.out.println("2. Load Existing User");
 
-        System.out.println("login menu");
+        System.out.println("welcome to the Quiz Game!\n");
+        System.out.println("    |-Login Menu-|");
+        System.out.println("----------------------.");
+        System.out.println("1. Create new User    |");
+        System.out.println("2. Load Existing User |");
+        System.out.println("----------------------´");
+
+
         int index = 1;
         for (Command command : commands)
         {

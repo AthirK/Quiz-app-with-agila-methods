@@ -20,7 +20,8 @@ public class GameMenu extends Menu
     public void display()
     {
         // loops throw command list and prints an index number and command name.
-        System.out.println("Welcome to the Quiz Game! Type 'help' for a list of commands.");
+        System.out.println("       <GAME MENU>");
+        System.out.println("Welcome to the Quiz Game! \nType 'help' for a list of commands.");
         int index = 1;
         for (Command command : commands)
         {

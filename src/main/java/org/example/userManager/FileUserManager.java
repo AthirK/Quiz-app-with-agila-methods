@@ -22,7 +22,7 @@ public class FileUserManager implements UserManager
             writer.append(user.getUsername()).append("\n")
                     .append(String.valueOf(user.getPoints())).append("\n");
 
-            System.out.println("User " + user.getUsername() + " created successfully!");
+            System.out.println("User " + user.getUsername() + " created successfully!\n" );
         }
         catch (IOException e)
         {
@@ -67,7 +67,7 @@ public class FileUserManager implements UserManager
             user.setUsername(reader.readLine());
             user.setPoints(Integer.parseInt(reader.readLine()));
 
-            System.out.println("User " + user.getUsername() + " Loaded successfully!");
+            System.out.println("User " + user.getUsername() + " Loaded successfully!\n");
 
             return user;
         }
