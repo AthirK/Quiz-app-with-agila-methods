@@ -59,6 +59,7 @@ public class DogQuiz extends Command {
             System.out.println();
         } else {
             System.out.println("Wrong, the correct answer is 4");
+            System.out.println();
         }
 
         // Question 3
@@ -75,23 +76,24 @@ public class DogQuiz extends Command {
             System.out.println();
         } else {
             System.out.println("Wrong, the correct answer is: c) They eay grass");
+            System.out.println();
         }
-
 
         // Question 4
         System.out.println("Which sense is most developed in dogs??");
         System.out.println("a) Sight \nb) Smell \nc) Hearing");
         String input4 = scan.nextLine();
-        if (input3.equalsIgnoreCase("b")) {
+        if (input4.equalsIgnoreCase("b")) {
             System.out.println("Correct!");
             score++;
             System.out.println();
-        } else if (input1.equalsIgnoreCase("Smell")){
+        } else if (input4.equalsIgnoreCase("Smell")){
             System.out.println("Correct!");
             score++;
             System.out.println();
         } else {
             System.out.println("Wrong, the correct answer is: Smell");
+            System.out.println();
         }
 
 
@@ -99,11 +101,11 @@ public class DogQuiz extends Command {
         System.out.println("What is a group of puppies called?");
         System.out.println("a) Pack\nb) Litter\nc) Herd");
         String input5 = scan.nextLine();
-        if (input3.equalsIgnoreCase("b")) {
+        if (input5.equalsIgnoreCase("b")) {
             System.out.println("Correct!");
             score++;
             System.out.println();
-        } else if (input1.equalsIgnoreCase("Litter")){
+        } else if (input5.equalsIgnoreCase("Litter")){
             System.out.println("Correct!");
             score++;
             System.out.println();
@@ -112,7 +114,15 @@ public class DogQuiz extends Command {
         }
 
         // Displays the final score
-        System.out.println("\nYou scored " + score + " out of 5!");
+        System.out.println("                            __");
+        System.out.println("     ,                    ,\" e`--o");
+        System.out.println("    ((                   (  | __,'");
+        System.out.println("     \\\\~----------------' \\_;/");
+        System.out.println("     (  You scored " + score + " of 5!  /");
+        System.out.println("     /) ._______________.  )");
+        System.out.println("    (( (               (( (");
+        System.out.println("     ``-'               ``-'");
+        System.out.println();
 
         System.out.println("The dog quiz is finished, type 'help' to see menu.");
     }
