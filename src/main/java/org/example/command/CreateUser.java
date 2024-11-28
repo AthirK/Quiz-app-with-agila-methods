@@ -18,9 +18,9 @@ public class CreateUser extends Command
     public void execute(String[] commandArgs)
     {
         Scanner scanner = new Scanner(System.in);
-        boolean createdUser = false;
+        boolean userIsCreated = false;
 
-        while (!createdUser)
+        while (!userIsCreated)
         {
             System.out.println("Enter Username");
             String newUsername = scanner.nextLine().trim();
@@ -56,8 +56,10 @@ public class CreateUser extends Command
                             existingUser.setUsername(newUsername);
                             existingUser.setPoints(0);
                             application.getUserManager().save(existingUser);
+                            application.setCurrentUser(existingUser);
                             System.out.println(newUsername + " has been overwritten. \n");
-                            createdUser = true;
+
+                            userIsCreated = true;
                             validMenuChoice = true;
                             break;
 
@@ -85,10 +87,11 @@ public class CreateUser extends Command
                 User newUser = new User();
                 newUser.setUsername(newUsername);
                 newUser.setPoints(0);
-
                 application.getUserManager().save(newUser);
+                application.setCurrentUser(newUser);
                 System.out.println("User " + newUsername + " has been created. \n");
-                createdUser = true;
+
+                userIsCreated = true;
             }
         }
         //change menu to game menu
