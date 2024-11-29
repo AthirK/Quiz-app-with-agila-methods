@@ -25,6 +25,7 @@ public class CreateUser extends Command
             System.out.println("Enter Username");
             String newUsername = scanner.nextLine().trim();
 
+
             // Validate username
             if (!isValidUsername(newUsername))
             {
@@ -59,6 +60,8 @@ public class CreateUser extends Command
                             System.out.println(newUsername + " has been overwritten. \n");
                             createdUser = true;
                             validMenuChoice = true;
+
+
                             break;
 
                         case "2":
