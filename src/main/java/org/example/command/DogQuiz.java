@@ -38,6 +38,7 @@ public class DogQuiz extends Command {
         System.out.println(ANSI_YELLOW + "What is the most common dog in Sweden?" + ANSI_RESET);
         System.out.println("a) Labrador\nb) Whippet\nc) German shepherd");
         String input1 = scan.nextLine();
+
         if (input1.equalsIgnoreCase("a")) {
             System.out.println(ANSI_GREEN + "Correct!" + ANSI_RESET);
             score++;
@@ -61,14 +62,12 @@ public class DogQuiz extends Command {
             score++;
             System.out.println();
 
-        } else if (input1.equalsIgnoreCase("4")){
+        } else if (input2.equalsIgnoreCase("Four")){
             System.out.println(ANSI_GREEN + "Correct!" + ANSI_RESET);
-
-
             score++;
             System.out.println();
         } else {
-            System.out.println(ANSI_RED + "Wrong, the correct answer is 4" + ANSI_RESET);
+            System.out.println(ANSI_RED + "Wrong, the correct answer is four" + ANSI_RESET);
             System.out.println();
         }
 
@@ -80,10 +79,8 @@ public class DogQuiz extends Command {
             System.out.println(ANSI_GREEN + "Correct!" + ANSI_RESET);
             score++;
             System.out.println();
-
         } else if (input1.equalsIgnoreCase("they eat grass")){
             System.out.println(ANSI_GREEN + "Correct!" + ANSI_RESET);
-
             score++;
             System.out.println();
         } else {
@@ -137,15 +134,9 @@ public class DogQuiz extends Command {
         System.out.println("     ``-'               ``-'" + ANSI_RESET);
         System.out.println();
 
+        // Saves points to user and saves user to file
+        application.getPointsManager().updatePoints(score);
+
         System.out.println("The dog quiz is finished, type 'help' to see menu.");
-
-       FileUserManager userManager = new FileUserManager();
-       System.out.println("Type your username to add these points to your total score:");
-       String username = scan.nextLine();
-       userManager.updatePoints(username, score);
-
-
-
-
     }
 }

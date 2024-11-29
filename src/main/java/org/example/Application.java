@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.pointManager.PointsManager;
+import org.example.pointManager.SimplePointsManager;
 import org.example.menu.MenuManager;
 import org.example.menu.SimpleMenuManager;
 import org.example.userManager.FileUserManager;
@@ -13,6 +15,7 @@ public class Application
     //Managers
     private final MenuManager menuManager;
     private final UserManager userManager;
+    private final PointsManager pointsManager;
 
     // Current user stores the active user
     private User currentUser;
@@ -21,6 +24,7 @@ public class Application
     {
         this.menuManager = new SimpleMenuManager(this);
         this.userManager = new FileUserManager();
+        this.pointsManager = new SimplePointsManager(this);
 
         // Initialize with no active user
         this.currentUser = null;
@@ -55,8 +59,15 @@ public class Application
         return currentUser;
     }
 
+    public PointsManager getPointsManager()
+    {
+        return pointsManager;
+    }
+
     public void setCurrentUser(User currentUser)
     {
         this.currentUser = currentUser;
     }
+
+
 }
