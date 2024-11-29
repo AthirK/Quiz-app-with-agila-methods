@@ -3,6 +3,7 @@ package org.example.menu;
 import org.example.Application;
 import org.example.command.Command;
 import org.example.command.CreateUser;
+import org.example.command.LoadUser;
 import org.example.command.SportQuiz;
 
 public class UserMenu extends Menu
@@ -13,6 +14,7 @@ public class UserMenu extends Menu
 
         // User commands
         registerCommand(new CreateUser(application));
+        registerCommand(new LoadUser(application));
     }
 
     @Override
