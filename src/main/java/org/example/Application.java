@@ -4,7 +4,6 @@ import org.example.menu.MenuManager;
 import org.example.menu.SimpleMenuManager;
 import org.example.userManager.FileUserManager;
 import org.example.userManager.UserManager;
-
 import java.util.Scanner;
 
 public class Application

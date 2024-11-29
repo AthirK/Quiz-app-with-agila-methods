@@ -6,6 +6,9 @@ import org.example.command.CreateUser;
 import org.example.command.LoadUser;
 import org.example.command.SportQuiz;
 
+import static org.example.Utilities.TextColor.ANSI_GREEN;
+import static org.example.Utilities.TextColor.ANSI_RESET;
+
 public class UserMenu extends Menu
 {
     public UserMenu(Application application)
@@ -22,7 +25,7 @@ public class UserMenu extends Menu
     {
         // loops throw command list and prints an index number and command name.
         System.out.println("welcome to the Quiz Game!\n");
-        System.out.println("    |-Login Menu-|");
+        System.out.println("\u001B[40m" + ANSI_GREEN + "    |-Login Menu-|    " + ANSI_RESET);
         System.out.println("----------------------");
         for (Command command : commands)
         {
