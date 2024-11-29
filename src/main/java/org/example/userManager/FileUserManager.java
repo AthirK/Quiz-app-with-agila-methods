@@ -72,4 +72,21 @@ public class FileUserManager implements UserManager
             return null;
         }
     }
+
+    // metod för att lägga till poäng till en användares totalpoäng
+    public void updatePoints(String username, int pointsToAdd) {
+        User user = getByUsername(username);
+        if (user == null) {
+            System.out.println("User not found.");
+            return;
+        }
+
+        int newPoints = user.getPoints() + pointsToAdd;
+        user.setPoints(newPoints);
+
+        //skickar till save metoden
+        save(user);
+        System.out.println( username + "s' points has been updated to " + newPoints);
+    }
+
 }

@@ -1,6 +1,8 @@
 package org.example.command;
 
 import org.example.Application;
+import org.example.User;
+import org.example.userManager.FileUserManager;
 
 import java.util.Scanner;
 
@@ -49,15 +51,20 @@ public class DogQuiz extends Command {
         }
 
         // Question 2
+
         System.out.println(ANSI_YELLOW + "How many legs does a dog have?" + ANSI_RESET);
-        System.out.println("a) 4\nb) 3\nc) 8");
+        System.out.println("a) Four\nb) Three\nc) Eight");
+
         String input2 = scan.nextLine();
         if (input2.equalsIgnoreCase("a")) {
             System.out.println(ANSI_GREEN + "Correct!" + ANSI_RESET);
             score++;
             System.out.println();
+
         } else if (input1.equalsIgnoreCase("4")){
             System.out.println(ANSI_GREEN + "Correct!" + ANSI_RESET);
+
+
             score++;
             System.out.println();
         } else {
@@ -73,8 +80,10 @@ public class DogQuiz extends Command {
             System.out.println(ANSI_GREEN + "Correct!" + ANSI_RESET);
             score++;
             System.out.println();
+
         } else if (input1.equalsIgnoreCase("they eat grass")){
             System.out.println(ANSI_GREEN + "Correct!" + ANSI_RESET);
+
             score++;
             System.out.println();
         } else {
@@ -129,5 +138,14 @@ public class DogQuiz extends Command {
         System.out.println();
 
         System.out.println("The dog quiz is finished, type 'help' to see menu.");
+
+       FileUserManager userManager = new FileUserManager();
+       System.out.println("Type your username to add these points to your total score:");
+       String username = scan.nextLine();
+       userManager.updatePoints(username, score);
+
+
+
+
     }
 }
