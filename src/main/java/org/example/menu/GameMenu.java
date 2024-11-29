@@ -27,7 +27,7 @@ public class GameMenu extends Menu
         // loops throw command list and prints an index number and command name.
         for (Command command : commands)
         {
-            System.out.println(command.getName());
+            System.out.println(command.getColoredName());
         }
     }
 }
