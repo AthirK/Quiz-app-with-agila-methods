@@ -32,14 +32,10 @@ public class FileUserManager implements UserManager
     @Override
     public void remove(User user)
     {
-        File file = new File("./User", user.getUsername() + ".txt");
+        File file = new File("./users", user.getUsername() + ".txt");
         if (file.exists())
         {
-            if (file.delete())
-            {
-                System.out.println(user.getUsername() + "' removed.");
-            }
-            else
+            if (!file.delete())
             {
                 System.out.println("Error: Could not delete user file.");
             }
