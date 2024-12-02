@@ -3,7 +3,7 @@ package org.example.menu;
 import org.example.Application;
 import org.example.command.Command;
 import org.example.command.CreateUser;
-import org.example.command.ExitCommand;
+
 import org.example.command.LoadUser;
 
 import static org.example.utilities.TextColor.ANSI_GREEN;

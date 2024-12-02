@@ -5,8 +5,6 @@ import org.example.menu.GameMenu;
 import org.example.menu.Menu;
 
 import java.util.Scanner;
-
-import static org.example.utilities.TextColor.*;
 import static org.example.utilities.TextColor.ANSI_RESET;
 
 public class ExitCommand  extends Command{
