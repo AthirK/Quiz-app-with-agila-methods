@@ -77,5 +77,10 @@ public class SportQuiz extends Command {
 
         // Display the final score
         System.out.println("\nYou scored " + score + " out of 5! Type help to return to main menu");
+
+        // Saves points to user and saves user to file
+        application.getPointsManager().updatePoints(score);
+
+        System.out.println("The sport quiz is finished, type 'help' to see menu.");
     }
 }
