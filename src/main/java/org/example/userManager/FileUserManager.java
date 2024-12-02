@@ -9,10 +9,10 @@ public class FileUserManager implements UserManager
     @Override
     public void save(User user)
     {
-        File folder = new File("./Users");
+        File folder = new File("./users");
         if (!folder.exists() && !folder.mkdirs())
         {
-            System.out.println("Error: Could not create Users folder.");
+            System.out.println("Error: Could not create users folder.");
             return;
         }
 
@@ -41,19 +41,19 @@ public class FileUserManager implements UserManager
             }
             else
             {
-                System.out.println("Error: Could not delete User file.");
+                System.out.println("Error: Could not delete user file.");
             }
         }
         else
         {
-            System.out.println("Error: User file not found.");
+            System.out.println("Error: user file not found.");
         }
     }
 
     @Override
     public User getByUsername(String Username)
     {
-        File file = new File("./Users", Username + ".txt");
+        File file = new File("./users", Username + ".txt");
         if (!file.exists())
         {
             return null;

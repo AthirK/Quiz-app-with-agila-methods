@@ -1,12 +1,10 @@
 package org.example.command;
 
 import org.example.Application;
-import org.example.User;
-import org.example.userManager.FileUserManager;
 
 import java.util.Scanner;
 
-import static org.example.Utilities.TextColor.*;
+import static org.example.utilities.TextColor.*;
 
 public class DogQuiz extends Command {
 

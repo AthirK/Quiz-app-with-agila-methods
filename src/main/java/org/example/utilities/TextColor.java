@@ -1,4 +1,4 @@
-package org.example.Utilities;
+package org.example.utilities;
 
 
 //TextColor class that holds all colors available to use.
