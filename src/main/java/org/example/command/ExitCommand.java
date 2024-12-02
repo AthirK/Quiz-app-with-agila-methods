@@ -11,7 +11,7 @@ import static org.example.utilities.TextColor.ANSI_RESET;
 
 public class ExitCommand  extends Command{
     public ExitCommand(Application application) {
-        super("Quit", "Close the program", "\u001B[36m", application);
+        super("Quit", "Close the programme", "\u001B[36m", application);
     }
 
     @Override
@@ -22,8 +22,8 @@ public class ExitCommand  extends Command{
         System.out.println(" )                     .---------------------------------.                    (");
         System.out.println("(                      |  .---------------------------.  |                      )");
         System.out.println(" )                     |[]|                           |[]|                    (");
-        System.out.println("(                      |  | Type [Quit] to close the  |  |                      )");
-        System.out.println(" )                     |  |   programme or [Stay]     |  |                    (");
+        System.out.println("(                      |  | Type [\u001B[31mQuit" +ANSI_RESET +"] to close the  |  |                      )");
+        System.out.println(" )                     |  |   programme or [\u001B[32mStay" +ANSI_RESET +  "]     |  |                    (");
         System.out.println("(                      |  |    to return to the       |  |                      )");
         System.out.println(" )                     |  |    quiz selection menu.   |  |                    (");
         System.out.println("(                      |  |                           |  |                      )");
@@ -34,10 +34,8 @@ public class ExitCommand  extends Command{
         System.out.println(" )                     |      __________________ _____   |                    (");
         System.out.println("(                      |     |   ___            |     |  |                      )");
         System.out.println(" )                     |     |  |   |           |     |  |                    (");
-        System.out.println("(                      |     |  |   |           |     |  |                      )");
-        System.out.println(" )                     |     |  |   |           |     |  |                    (");
         System.out.println("(                      |     |  |___|           |     |  |                      )");
-        System.out.println(" )                     \'____|__________________|_____|__|                    (");
+        System.out.println(" )                     \\_____|__________________|_____|__|                    (");
         System.out.println(" (___       _       _       _       _       _       _       _       _       ___)");
         System.out.println("     `-._.-' (___ _) (__ _ ) (_   _) (__  _) ( __ _) (__  _) (__ _ ) `-._.-'");
         System.out.println("             `-._.-' (  ___) ( _  _) ( _ __) (_  __) (__ __) `-._.-'");
