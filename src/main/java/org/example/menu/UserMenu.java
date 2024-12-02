@@ -5,8 +5,8 @@ import org.example.command.Command;
 import org.example.command.CreateUser;
 import org.example.command.LoadUser;
 
-import static org.example.utilities.TextColor.ANSI_GREEN;
-import static org.example.utilities.TextColor.ANSI_RESET;
+import static org.example.utility.TextColor.ANSI_GREEN;
+import static org.example.utility.TextColor.ANSI_RESET;
 
 public class UserMenu extends Menu
 {

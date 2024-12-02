@@ -2,7 +2,7 @@ package org.example.command;
 
 import org.example.Application;
 
-import static org.example.utilities.TextColor.ANSI_RESET;
+import static org.example.utility.TextColor.ANSI_RESET;
 
 
 public abstract class Command
