@@ -18,7 +18,7 @@ public class UserMenu extends Menu
         // User commands
         registerCommand(new CreateUser(application));
         registerCommand(new LoadUser(application));
-        registerCommand(new ExitCommand(application));
+
     }
 
     @Override
