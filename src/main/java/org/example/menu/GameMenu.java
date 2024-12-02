@@ -3,6 +3,7 @@ package org.example.menu;
 import org.example.Application;
 import org.example.command.Command;
 import org.example.command.DogQuiz;
+import org.example.command.LogOutUser;
 import org.example.command.SportQuiz;
 
 public class GameMenu extends Menu
@@ -14,6 +15,7 @@ public class GameMenu extends Menu
         // Game commands
         registerCommand(new SportQuiz(application));
         registerCommand(new DogQuiz(application));
+        registerCommand(new LogOutUser(application));
     }
 
     @Override
