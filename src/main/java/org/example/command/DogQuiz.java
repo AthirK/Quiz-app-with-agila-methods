@@ -46,7 +46,9 @@ public class DogQuiz extends Command {
             score++;
             System.out.println();
         } else {
+            System.out.println();
             System.out.println(ANSI_RED + "Wrong, the correct answer is Labrador." + ANSI_RESET);
+            System.out.println();
         }
 
         // Question 2
@@ -65,6 +67,7 @@ public class DogQuiz extends Command {
             score++;
             System.out.println();
         } else {
+            System.out.println();
             System.out.println(ANSI_RED + "Wrong, the correct answer is four" + ANSI_RESET);
             System.out.println();
         }
@@ -82,6 +85,7 @@ public class DogQuiz extends Command {
             score++;
             System.out.println();
         } else {
+            System.out.println();
             System.out.println(ANSI_RED + "Wrong, the correct answer is: c) They eay grass" + ANSI_RESET);
             System.out.println();
         }
@@ -99,6 +103,7 @@ public class DogQuiz extends Command {
             score++;
             System.out.println();
         } else {
+            System.out.println();
             System.out.println(ANSI_RED + "Wrong, the correct answer is: Smell" + ANSI_RESET);
             System.out.println();
         }
@@ -117,7 +122,9 @@ public class DogQuiz extends Command {
             score++;
             System.out.println();
         } else {
+            System.out.println();
             System.out.println(ANSI_RED + "Wrong, the correct answer is: Litter" + ANSI_RESET);
+            System.out.println();
         }
 
         // Displays the final score
