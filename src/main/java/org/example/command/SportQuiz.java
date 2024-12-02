@@ -18,6 +18,7 @@ public class SportQuiz extends Command {
         int score = 0;
 
         System.out.println("Important notice, if you input anything other than a,b or c, this will count as a try and result in loss of 1 point");
+        System.out.println();
 
         // Question 1
         System.out.println(ANSI_BLUE + "How many teams play in a soccer match?" + ANSI_RESET);
