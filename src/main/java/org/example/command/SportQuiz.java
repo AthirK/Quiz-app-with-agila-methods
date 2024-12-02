@@ -11,13 +11,16 @@ public class SportQuiz extends Command {
         super("Sport-Quiz", "Type 'Sport-quiz' to play a sweaty sport game.", "\u001B[34m", application);
     }
 
+
     @Override
     public void execute(String[] commandArgs)
     {
         Scanner scan = new Scanner(System.in);
         int score = 0;
 
-        System.out.println("Important notice, if you input anything other than a,b or c, this will count as a try and result in loss of 1 point");
+        System.out.println("Important notice, if you input anything other than a,b or c, this will count as a try and result in loss of 1 point\n");
+
+
         System.out.println();
 
         // Question 1

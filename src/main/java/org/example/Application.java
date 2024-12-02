@@ -35,7 +35,6 @@ public class Application
         Application application = new Application();
 
         Scanner scanner = new Scanner(System.in);
-
         while (run)
         {
             String input = scanner.nextLine();
