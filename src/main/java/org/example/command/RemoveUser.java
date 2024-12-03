@@ -72,7 +72,7 @@ public class RemoveUser extends Command
                 }
                 else
                 {
-                    System.out.println("Invalid choice. Please select 1 or 2.");
+                    System.out.println("Invalid choice. Select a number from the list");
                 }
             }
         }
