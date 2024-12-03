@@ -20,7 +20,7 @@ public class Exit extends Command{
         System.out.println(" )                     .---------------------------------.                    (");
         System.out.println("(                      |  .---------------------------.  |                      )");
         System.out.println(" )                     |[]|                           |[]|                    (");
-        System.out.println("(                      |  | Type [\u001B[31mQuit" + ANSI_RESET +"] to close the  |  |                      )");
+        System.out.println("(                      |  | Type [\u001B[31mExit" + ANSI_RESET +"] to close the  |  |                      )");
         System.out.println(" )                     |  |   programme or [\u001B[32mStay" + ANSI_RESET +  "]     |  |                    (");
         System.out.println("(                      |  |    to return to the       |  |                      )");
         System.out.println(" )                     |  |    quiz selection menu.   |  |                    (");
@@ -46,7 +46,7 @@ public class Exit extends Command{
             Scanner scanner = new Scanner(System.in);
             String quitCommand = scanner.nextLine();
 
-            if (quitCommand.equalsIgnoreCase("quit")) {
+            if (quitCommand.equalsIgnoreCase("exit")) {
 
                 Application.run = false;
 
