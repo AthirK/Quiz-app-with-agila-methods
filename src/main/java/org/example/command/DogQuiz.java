@@ -4,7 +4,7 @@ import org.example.Application;
 
 import java.util.Scanner;
 
-import static org.example.utilities.TextColor.*;
+import static org.example.utility.TextColor.*;
 
 public class DogQuiz extends Command {
 
