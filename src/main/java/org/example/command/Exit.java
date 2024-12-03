@@ -9,7 +9,7 @@ import static org.example.utility.TextColor.*;
 
 public class Exit extends Command{
     public Exit(Application application) {
-        super("Quit", "Close the programme", "\u001B[36m", application);
+        super("Exit", "Close the programme", "\u001B[36m", application);
     }
 
     @Override
