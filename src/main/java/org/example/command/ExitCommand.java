@@ -48,7 +48,8 @@ public class ExitCommand  extends Command{
 
             if (quitCommand.equalsIgnoreCase("quit")) {
 
-                System.exit(0);
+                Application.run = false;
+
 
             } else {
 
