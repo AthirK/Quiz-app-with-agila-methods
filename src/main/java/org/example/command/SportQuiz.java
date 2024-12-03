@@ -4,7 +4,7 @@ import org.example.Application;
 
 import java.util.Scanner;
 
-import static org.example.utilities.TextColor.*;
+import static org.example.utility.TextColor.*;
 
 public class SportQuiz extends Command {
     public SportQuiz(Application application) {
@@ -18,7 +18,7 @@ public class SportQuiz extends Command {
         Scanner scan = new Scanner(System.in);
         int score = 0;
 
-        System.out.println("Important notice, if you input anything other than a,b or c, this will count as a try and result in loss of 1 point\n");
+        System.out.println("Important notice, if you input anything other than the answer in text or a,b or c, this will count as a try and result in loss of 1 point\n");
 
 
         System.out.println();
