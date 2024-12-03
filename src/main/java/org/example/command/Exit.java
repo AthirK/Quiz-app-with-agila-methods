@@ -5,10 +5,10 @@ import org.example.menu.GameMenu;
 import org.example.menu.Menu;
 
 import java.util.Scanner;
-import static org.example.utilities.TextColor.ANSI_RESET;
+import static org.example.utility.TextColor.*;
 
-public class ExitCommand  extends Command{
-    public ExitCommand(Application application) {
+public class Exit extends Command{
+    public Exit(Application application) {
         super("Quit", "Close the programme", "\u001B[36m", application);
     }
 
@@ -20,8 +20,8 @@ public class ExitCommand  extends Command{
         System.out.println(" )                     .---------------------------------.                    (");
         System.out.println("(                      |  .---------------------------.  |                      )");
         System.out.println(" )                     |[]|                           |[]|                    (");
-        System.out.println("(                      |  | Type [\u001B[31mQuit" +ANSI_RESET +"] to close the  |  |                      )");
-        System.out.println(" )                     |  |   programme or [\u001B[32mStay" +ANSI_RESET +  "]     |  |                    (");
+        System.out.println("(                      |  | Type [\u001B[31mQuit" + ANSI_RESET +"] to close the  |  |                      )");
+        System.out.println(" )                     |  |   programme or [\u001B[32mStay" + ANSI_RESET +  "]     |  |                    (");
         System.out.println("(                      |  |    to return to the       |  |                      )");
         System.out.println(" )                     |  |    quiz selection menu.   |  |                    (");
         System.out.println("(                      |  |                           |  |                      )");
