@@ -4,7 +4,9 @@ import org.example.Application;
 import org.example.command.Command;
 import org.example.command.CreateUser;
 import org.example.command.LoadUser;
+import org.example.command.RemoveUser;
 import org.example.command.ViewUsers;
+
 
 import static org.example.utility.TextColor.ANSI_GREEN;
 import static org.example.utility.TextColor.ANSI_RESET;
@@ -19,6 +21,7 @@ public class UserMenu extends Menu
         registerCommand(new CreateUser(application));
         registerCommand(new LoadUser(application));
         registerCommand(new ViewUsers(application));
+        registerCommand(new RemoveUser(application));
     }
 
     @Override
